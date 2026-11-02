@@ -53,3 +53,39 @@
         </fieldset>
 
         <br>
+
+        <!-- Section 2: Education -->
+        <fieldset>
+            <legend>Education</legend>
+
+            <!-- Dropdown -->
+            <label for="course">Course *</label><br>
+            <select id="course" name="course" required>
+                <option value="">-- Select Course --</option>
+                <option value="btech-cs" selected>BTech - Computer Science</option>
+                <option value="btech-it">BTech - Information Technology</option>
+                <option value="bca">BCA</option>
+            </select><br><br>
+
+            <!-- Datalist -->
+            <label for="city">Preferred city (datalist)</label><br>
+            <input type="text" id="city" name="city" list="city-list" placeholder="Delhi">
+            <datalist id="city-list">
+                <option value="Delhi">
+                <option value="Mumbai">
+                <option value="Bengaluru">
+                <option value="Pune">
+                <option value="Hyderabad">
+            </datalist><br><br>
+
+            <!-- Checkboxes -->
+            <label>Skills:</label>
+            <input type="checkbox" id="skill-html" name="skills" value="html" checked>
+            <label for="skill-html">HTML</label>
+            <input type="checkbox" id="skill-css" name="skills" value="css" checked>
+            <label for="skill-css">CSS</label>
+            <input type="checkbox" id="skill-js" name="skills" value="js">
+            <label for="skill-js">JavaScript</label>
+        </fieldset>
+
+        <br>
