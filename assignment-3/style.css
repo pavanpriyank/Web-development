@@ -1,0 +1,84 @@
+/* CSS Variables defined in :root */
+:root {
+    --primary-color: #1a364a;
+    --text-color: #2c3e50;
+    --caption-color: #1a364a;
+    --border-color: #e2e8f0;
+    --bg-even: #f8fafc;
+    --bg-odd: #ffffff;
+    --bg-hover: #e0f2fe;
+    --font-family: Arial, Helvetica, sans-serif;
+    --font-size: 13px;
+    --cell-padding: 10px 14px;
+}
+
+/* Page base styles */
+body {
+    font-family: var(--font-family);
+    color: var(--text-color);
+    background-color: #f1f5f9;
+    padding: 30px;
+    margin: 0;
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: var(--bg-odd);
+    font-size: var(--font-size);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Caption styling */
+caption {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 16px;
+    color: var(--caption-color);
+}
+
+/* Header, body cell borders and padding */
+th, td {
+    padding: var(--cell-padding);
+    border: 1px solid var(--border-color);
+    text-align: left;
+}
+
+/* Header row styling */
+thead th {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+/* Rowspan Brand cells styling */
+tbody th[scope="rowgroup"] {
+    background-color: #ffffff;
+    font-weight: bold;
+    color: var(--primary-color);
+    vertical-align: middle;
+}
+
+/* Striped rows styling */
+tbody tr:nth-child(even) {
+    background-color: var(--bg-even);
+}
+
+/* Row hover effect */
+tbody tr:hover {
+    background-color: var(--bg-hover);
+}
+
+/* Footer styling */
+tfoot tr {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    font-weight: bold;
+}
+
+tfoot td {
+    border-color: var(--primary-color);
+}
