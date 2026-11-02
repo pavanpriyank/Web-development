@@ -89,3 +89,42 @@
         </fieldset>
 
         <br>
+               <!-- Section 3: Upload & Extras -->
+        <fieldset>
+            <legend>Upload & Extras</legend>
+
+            <!-- Date -->
+            <label for="available-date">Available from</label><br>
+            <input type="date" id="available-date" name="available_date" value="2026-11-15"><br><br>
+
+            <!-- Time -->
+            <label for="interview-time">Interview time</label><br>
+            <input type="time" id="interview-time" name="interview_time" value="10:30"><br><br>
+
+            <!-- File Upload -->
+            <label for="resume">Resume *</label><br>
+            <input type="file" id="resume" name="resume" required accept=".pdf,.doc,.docx"><br><br>
+
+            <!-- Range Slider -->
+            <label for="stipend">Expected monthly stipend: &#8377;10,000</label><br>
+            <input type="range" id="stipend" name="stipend" min="5000" max="50000" step="1000" value="10000"><br><br>
+
+            <!-- Color Picker -->
+            <label for="favourite-color">Favourite colour:</label>
+            <input type="color" id="favourite-color" name="favourite_color" value="#008080"><br><br>
+
+            <!-- Textarea -->
+            <label for="reason">Why would you like to join?</label><br>
+            <textarea id="reason" name="reason" rows="4" cols="50" placeholder="I want to practise HTML and CSS on real projects."></textarea>
+        </fieldset>
+
+        <br>
+
+        <!-- Submit & Reset Buttons -->
+        <button type="submit">Submit application</button>
+        <button type="reset">Reset</button>
+
+    </form>
+
+</body>
+</html>
