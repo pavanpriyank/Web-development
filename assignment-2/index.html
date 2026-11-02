@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Student Internship Application Form">
+    <meta name="author" content="Pavan priyank">
+    <title>The Ultimate Form</title>
+</head>
+<body>
+
+    <h1>Application Form</h1>
+    <p>Student Internship application &middot; * Required</p>
+
+    <form action="#" method="POST" enctype="multipart/form-data">
+
+        <!-- Section 1: Personal Details -->
+        <fieldset>
+            <legend>Personal Details</legend>
+
+            <!-- Full Name -->
+            <label for="fullname">Full name *</label><br>
+            <input type="text" id="fullname" name="fullname" placeholder="Pavan priyank" required minlength="3"><br><br>
+
+            <!-- Email -->
+            <label for="email">Email *</label><br>
+            <input type="email" id="email" name="email" placeholder="pavankatiha@gmail.com" required><br><br>
+
+            <!-- Password -->
+            <label for="password">Password *</label><br>
+            <input type="password" id="password" name="password" placeholder="••••••••" required minlength="6"><br><br>
+
+            <!-- Phone -->
+            <label for="phone">Phone *</label><br>
+            <input type="tel" id="phone" name="phone" placeholder="6397691876" required pattern="[0-9]{10}"><br><br>
+
+            <!-- Portfolio URL -->
+            <label for="portfolio">Portfolio URL</label><br>
+            <input type="url" id="portfolio" name="portfolio" placeholder="https://example.com"><br><br>
+
+            <!-- Age -->
+            <label for="age">Age *</label><br>
+            <input type="number" id="age" name="age" placeholder="18" required min="18" max="60"><br><br>
+
+            <!-- Gender -->
+            <label>Gender:</label>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+            <input type="radio" id="other" name="gender" value="other" checked>
+            <label for="">Other / prefer not to say</label>
+        </fieldset>
+
+        <br>
